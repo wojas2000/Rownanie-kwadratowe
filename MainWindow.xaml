@@ -1,0 +1,26 @@
+﻿<Window x:Class="Równanie_kwadratowe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Równanie_kwadratowe"
+        mc:Ignorable="d"
+        Title="Rownanie kwadratowe" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="Wsp_a" HorizontalAlignment="Left" Margin="153,40,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="164" TextChanged="Wsp_a_changed"/>
+        <Label Content="Wprowadz wspl. a = " HorizontalAlignment="Left" Margin="32,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rownanie kwadratowe ma postac: ax^2+bx+c=0" HorizontalAlignment="Left" Margin="32,5,0,0" VerticalAlignment="Top"/>
+        <Label Content="Wprowadz wspl. b = " HorizontalAlignment="Left" Margin="31,67,0,0" VerticalAlignment="Top"/>
+        <Label Content="Wprowadz wspl. c = " HorizontalAlignment="Left" Margin="33,98,0,0" VerticalAlignment="Top"/>
+        <Label Content="Wzor na delte: ∆ =b^2 - 4ac" HorizontalAlignment="Left" Margin="33,140,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Wsp_b" HorizontalAlignment="Left" Margin="153,71,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="164" TextChanged="Wsp_b_changed"/>
+        <TextBox x:Name="Wsp_c" HorizontalAlignment="Left" Margin="153,102,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="164" TextChanged="Wsp_c_changed"/>
+        <Button x:Name="Obl_Delta" Content="Oblicz ∆" HorizontalAlignment="Left" Margin="193,201,0,0" VerticalAlignment="Top" Click="Oblicz_Delta_Click"/>
+        <Label x:Name="Wynik_delta" Content="Wynik..." HorizontalAlignment="Left" Margin="226,140,0,0" VerticalAlignment="Top" TextInput="Delta_Text_Show" Width="290"/>
+        <Label x:Name="Label_x1" Content="x1 = (-b-√∆)/(2*a)" HorizontalAlignment="Left" Margin="33,246,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label_x2" Content="x2 = (-b-√∆)/(2*a)" HorizontalAlignment="Left" Margin="207,246,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Obl_x1_x2" Content="Oblicz rów. kwadrtowe." HorizontalAlignment="Left" Margin="193,299,0,0" VerticalAlignment="Top" Click="Oblicz_x1_x2_Click"/>
+        <Label x:Name="Wynik_x1_x2" Content="Wynik..." HorizontalAlignment="Center" Margin="0,324,0,0" VerticalAlignment="Top" TextInput="x1_x2_Text_Show" Width="708" Height="70"/>
+
+    </Grid>
+</Window>
